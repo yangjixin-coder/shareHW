@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="@drawable/background1">
+
+
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+        android:drawablePadding="5dp"
+        android:hint="用户名/电话号"
+        android:layout_marginTop="150dp"
+        android:textAllCaps="false"
+        android:textColor="#FFAD33"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textAllCaps="false"
+        android:hint="密码"
+        android:textColor="#FFAD33"
+        android:textSize="16sp"
+        android:layout_below="@+id/et_phone"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/password"
+        android:drawablePadding="5dp"/>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_password"
+        android:textAllCaps="false"
+        android:text="登录"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/bt_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login"
+        android:textAllCaps="false"
+        android:text="注册"
+        android:textSize="20dp"
+        android:background="@android:color/transparent"
+        android:theme="@android:style/Theme.Translucent"/>
+</RelativeLayout>
