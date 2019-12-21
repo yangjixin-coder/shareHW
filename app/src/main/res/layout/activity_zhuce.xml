@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ZhuceActivity">
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+
+        android:text="手机号码注册"
+        android:textSize="26sp"
+        />
+
+    <EditText
+        android:id="@+id/et_phonenum"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textview"
+        android:layout_marginTop="26dp"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/ic_phone_black_24dp"
+        android:hint="   手机号"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <!--<EditText
+        android:id="@+id/et_verification"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textAllCaps="false"
+        android:hint="   验证码"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:inputType="number"
+        android:layout_below="@+id/et_phonenum"
+        android:layout_marginTop="15dp"
+        android:drawablePadding="5dp"/>-->
+
+    <LinearLayout
+        android:layout_below="@+id/et_phonenum"
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="45dp">
+        <EditText
+            android:id="@+id/et_phoneCodes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@null"
+            android:hint="请输入右侧验证码" />
+    </LinearLayout>
+    </LinearLayout>
+    <EditText
+        android:id="@+id/et_password1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textAllCaps="false"
+        android:drawableLeft="@drawable/password"
+        android:hint="   密码"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_below="@+id/view"
+        android:layout_marginTop="15dp"
+        android:drawablePadding="5dp"/>
+
+    <EditText
+        android:id="@+id/et_password2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textAllCaps="false"
+        android:drawableLeft="@drawable/password"
+        android:hint="   再次输入"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_below="@+id/et_password1"
+        android:layout_marginTop="15dp"
+        android:drawablePadding="5dp"/>
+
+    <Button
+        android:id="@+id/login1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_password2"
+        android:textAllCaps="false"
+        android:text="注册并登录"
+        android:textSize="20dp"
+        android:background="#5CACEE" />
+</RelativeLayout>
